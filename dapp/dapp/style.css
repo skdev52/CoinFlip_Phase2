@@ -1,0 +1,60 @@
+html { overflow-y: scroll; }
+
+.container{
+	width:65%;
+ 	text-align:left;
+}
+
+.title{
+font-size:15px;
+background-color:#ebc9f2;
+line-height:2.6em;
+}
+
+
+.box-header{
+	color:#132566;
+	background-color:#f4f4f4;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:16px;
+	font: normal 16px Arial, Helvita, sans-serif;
+	line-height:1.0em;
+}
+
+.box-input{
+	color:black;
+	background-color:#dff7eb;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:16px;
+	font: normal 16px Arial, Helvita, sans-serif;
+	line-height:1.6em;
+}
+
+.box-results{
+	color:black;
+	background-color:#f4fad9;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:16px;
+	font: normal 16px Arial, Helvita, sans-serif;
+	line-height:1.6em;
+}
+.box-display{
+	color:black;
+	background-color:#faf9c3;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:16px;
+	font: normal 16px Arial, Helvita, sans-serif;
+	line-height:1.0em;
+	border-top: 2px brown solid;
+	border-right: 2px brown solid;
+	border-bottom: 2px brown solid;
+	border-left: 2px brown solid;
+}
+.box-contract{
+	color:black;
+	background-color:#FD8369;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:16px;
+	font: normal 16px Arial, Helvita, sans-serif;
+	line-height:1.0em;
+}

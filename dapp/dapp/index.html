@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Flip Coin</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"></script>
+    <script type="text/javascript" src="./web3.min.js"></script>
+    <script type="text/javascript" src="./abi.js"></script>
+    <script type="text/javascript" src="./main.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+  </head>
+  <body>
+    <div class="container">
+      <div class="title">
+        <h1>Flip Coin Project - Part 2 - ProvableAPI</h1>
+      </div>
+      <div class="box-header">
+        <p>Contract address: <span id="contract_address"></span></p>
+        <p>Player address: <span id="player_address"></span></p>
+      </div>
+      <div class="box-input">
+        <p><strong> Enter your play amount and choose a coin side</strong></p>
+          <label for="input_playamount">Your play amount:   </label>
+          <input type="number" id="input_playamount" placeholder="Enter amount" min=0.1 max=2 step=.5>
+          <label for="coinside">Choose a coin side:</label>
+          <select id="coinside">
+              <option value="">Select</option>
+              <option value="1">Heads</option>
+              <option value="0">Tails</option>
+          </select>
+        <button type="button" id="submit" >Play</button>
+      </div>
+        <p></p>
+        <p></p>
+        <div class="box-results">
+            <p>Coin flip result: <span id="player_message"></span></p>
+            <p>Your win amount: <span id="win_amount"></span></p>
+
+        </div>
+        <br>
+        <div class="box-display">
+            <h3>Available contract funds</h3>
+            <p>Contract Balance: <span id="contract_balance"></span></p>
+            <h3>Your coin flip game results summary</h3><button id="refresh">Refresh status</button>
+            <p>Times Won: <span id="win_count"></span></p>
+            <p>Times Lost: <span id="lost_count"></span></p>
+            <p>Total win amount : <span id="sum_won"></span></p>
+            <button type="button" id="withdraw" class="btn btn-primary">Withdraw</button>
+        </div>
+        <div class="box-contract">
+            <p>Admin functions (Contract Owner only)</p>
+            <button type="button" id="withdrawAll" class="btn btn-primary">Withdraw all funds</button>
+            <button type="button" id="deleteContract" class="btn btn-primary">Delete Contract</button>
+        </div>
+      </div>
+    <br>
+  </body>
+</html>
